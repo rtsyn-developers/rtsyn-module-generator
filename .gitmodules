@@ -1,0 +1,6 @@
+[submodule "templates/rtsyn-module-device-template"]
+	path = templates/rtsyn-module-device-template
+	url = https://github.com/seregioo/rtsyn-module-device-template
+[submodule "templates/rtsyn-module-plugin-template"]
+	path = templates/rtsyn-module-plugin-template
+	url = https://github.com/seregioo/rtsyn-module-plugin-template
