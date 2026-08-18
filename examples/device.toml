@@ -1,0 +1,31 @@
+name = "generic device"
+kind = "device"
+description = "Moves values at the runtime device boundaries."
+author = "Sergio Hidalgo"
+
+[[ports]]
+name = "in_port"
+number = 0
+direction = "input"
+type = "f64"
+description = "Value consumed by the terminal device stage."
+
+[[ports]]
+name = "out_port"
+number = 1
+direction = "output"
+type = "f64"
+description = "Value produced by the immediate device stage."
+
+[[params]]
+name = "device_id"
+number = 0
+type = "u64"
+default = "0U"
+description = "External device identifier."
+
+[[states]]
+name = "last_measurement"
+number = 0
+type = "f64"
+description = "Most recently acquired measurement."

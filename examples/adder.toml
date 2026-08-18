@@ -1,0 +1,45 @@
+name = "adder"
+kind = "plugin"
+description = "Adds two numeric inputs and writes the result."
+author = "Sergio Hidalgo"
+
+[[ports]]
+name = "left"
+number = 0
+direction = "input"
+type = "f64"
+description = "Left operand."
+
+[[ports]]
+name = "right"
+number = 1
+direction = "input"
+type = "f64"
+description = "Right operand."
+
+[[ports]]
+name = "sum"
+number = 2
+direction = "output"
+type = "f64"
+description = "Computed sum."
+
+[[params]]
+name = "left_multiplier"
+number = 0
+type = "f64"
+default = "1.0"
+description = "Constant multiplier applied to the left operand."
+
+[[params]]
+name = "right_multiplier"
+number = 1
+type = "f64"
+default = "1.0"
+description = "Constant multiplier applied to the right operand."
+
+[[states]]
+name = "result"
+number = 0
+type = "f64"
+description = "Most recently computed result."
